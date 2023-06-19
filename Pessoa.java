@@ -15,7 +15,7 @@ public class Pessoa{
 	void aniversario (){
 		this.idade = this.idade+1;
 	}
-	void atribuiCPF ( String c ){
+	void atribuiCPF (String c){
 		this.cpf = c ;
 	}
 	
