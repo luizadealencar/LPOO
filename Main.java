@@ -1,16 +1,11 @@
 public class Main{
   public static void main(String[] args){
-		Pessoa p1 = new Pessoa ("Maria", 18 , 'F', "123.456.789-00");
-		Pessoa p2 = new Pessoa ("Joao", 22 ,'M', "234.567.890-00");
-		
-		Conta c1 = new Conta ("1234-5", p1);
-		Conta c2 = new Conta ("2345-6", p2);
-		c1.extrato ();
-		c2.extrato ();
-		c1.sacar (150);
-		c1.transferir (100, c2);
-		c1.sacar (100);
-		c1.depositar (100);
-		c1.transferir (200, c2 );
-  }
+		System.out.println("O Banco está aberto!");
+		Pessoa p1= new Pessoa("Luiza", "6456345634", new Data (13, 3, 2019), 'F');
+		Pessoa p2= new Pessoa("Emerson", "6456345634", new Data (13, 3, 2019), 'M');
+		Gerente g1 = new Gerente ("Maria","16732733788", new Data (13, 3, 2019) , 'F', "323606", "dfghj");
+		Gerente g2 = new Gerente ("Joao", "16732733788", new Data (13, 3, 2019) , 'F', "323606", "dfghj");
+		ContaCorrente c1 = new ContaCorrente ("1234-5", p1, g1, new Data(12, 3, 2019)); 
+		Poupanca c2 = new Poupanca ("2345-6", p2, g2, new Data (13, 3, 2019));
+	}
 }
