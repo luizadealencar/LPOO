@@ -21,4 +21,12 @@ public class Conta{
 	public void extrato() {
     System.out.println("Saldo: " + saldo + "\n");
 	}
+
+	public String getNumero() {
+		return numero;
+	}
+	
+	public Pessoa getTitular() {
+    return titular;
+  }
 }
